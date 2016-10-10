@@ -6,11 +6,11 @@ import Funcionario = require('./Funcionario')
 var cliente = new Cliente();
 cliente.nome = "Wellingtos Schütz";
 
-var funcionaro = new Funcionario();
-funcionaro.nome = "Josnei da Silva";
+var funcionario = new Funcionario();
+funcionario.nome = "Josnei da Silva";
 
 http.createServer(function(request, response){
     response.writeHead(200, {"Content-Type": "text/html"});
-    response.write('Cliente: ' + cliente.nome + ' - Funcionario: ' + funcionaro.nome);
+    response.write('Cliente: ' + cliente.nome + ' - Funcionario: ' + funcionario.nome);
     response.end();
 }).listen(8000);
